@@ -17,6 +17,7 @@ public class Practica_Figuras extends JFrame implements ActionListener {
     JTextField txtBase, txtAltura, txtArea;
     JComboBox cbOpcion;
     JButton btnCalcular;
+    Figuras t;
     
     
     public Practica_Figuras(){
@@ -88,6 +89,8 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         
         this.setLayout(null);
         this.setVisible(true);
+        
+        t = new Figuras();
     }
 
 
@@ -100,7 +103,12 @@ public class Practica_Figuras extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == btnCalcular){
             switch(cbOpcion.getSelectedItem().toString()){
-                case "Triangulo": JOptionPane.showMessageDialog(rootPane, "Triangulo"); break;
+                case "Triangulo": 
+                    t.setBase(Double.parseDouble(txtBase.getText()));
+                    t.setAltura(Double.parseDouble(txtAltura.getText()));
+                    t.Calcular();
+                    txtArea.setText(String.valueOf(t.getCalcular()));
+                    break;
                 case "Cuadrado": JOptionPane.showMessageDialog(rootPane, "Cuadrado"); break;
                 case "Rectangulo": JOptionPane.showMessageDialog(rootPane, "Rectangulo"); break;
             }
