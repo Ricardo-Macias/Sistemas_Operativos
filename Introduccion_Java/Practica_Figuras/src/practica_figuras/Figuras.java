@@ -1,13 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package practica_figuras;
 
-/**
- *
- * @author Ricardo
- */
+
 public class Figuras {
+    private Double base;
+    private Double altura;
+    private Double area;
+    
+    
+    public void setBase(Double base){
+        this.base = base;
+    }
+    
+    public Double getBase(){
+        return this.base;
+    }
+    
+    public void setAltura(Double altura){
+        this.altura = altura;
+    }
+    
+    public Double getAltura(){
+        return this.altura;
+    }
+    
+  
     
 }
