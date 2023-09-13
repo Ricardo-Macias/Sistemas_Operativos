@@ -24,6 +24,14 @@ public class Figuras {
         return this.altura;
     }
     
+    public void Calcular(){
+        this.area=(this.base*this.altura)/2;
+    }
+    
+    public Double getCalcular(){
+        return this.area;
+    }
+    
   
     
 }
