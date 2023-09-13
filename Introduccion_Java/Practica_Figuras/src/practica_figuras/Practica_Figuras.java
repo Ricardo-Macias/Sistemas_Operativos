@@ -65,6 +65,17 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         txtArea.setVisible(true);
         this.add(txtArea);
         
+        
+        cbOpcion = new JComboBox();
+        cbOpcion.setBounds(120, 120,100,20);
+        cbOpcion.setName("cbOpcion");
+        cbOpcion.addItem("Triangulo");
+        cbOpcion.addItem("Cuadrado");
+        cbOpcion.addItem("Rectangulo");
+        cbOpcion.setVisible(true);
+        cbOpcion.addActionListener(this);
+        this.add(cbOpcion);
+        
         btnCalcular = new JButton();
         btnCalcular.setBounds(120, 150,100,20);
         btnCalcular.setName("btnCalcular");
@@ -88,7 +99,11 @@ public class Practica_Figuras extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == btnCalcular){
-            JOptionPane.showMessageDialog(rootPane, "Hola");
+            switch(cbOpcion.getSelectedItem().toString()){
+                case "Triangulo": JOptionPane.showMessageDialog(rootPane, "Triangulo"); break;
+                case "Cuadrado": JOptionPane.showMessageDialog(rootPane, "Cuadrado"); break;
+                case "Rectangulo": JOptionPane.showMessageDialog(rootPane, "Rectangulo"); break;
+            }
         }
     }
     
