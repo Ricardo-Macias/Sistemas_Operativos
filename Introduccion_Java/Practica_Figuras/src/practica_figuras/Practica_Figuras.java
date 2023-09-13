@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 
@@ -64,6 +65,14 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         txtArea.setVisible(true);
         this.add(txtArea);
         
+        btnCalcular = new JButton();
+        btnCalcular.setBounds(120, 150,100,20);
+        btnCalcular.setName("btnCalcular");
+        btnCalcular.setText("Calcular Area");
+        btnCalcular.setVisible(true);
+        btnCalcular.addActionListener(this);
+        this.add(btnCalcular);
+        
         
         
         this.setLayout(null);
@@ -78,7 +87,9 @@ public class Practica_Figuras extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(e.getSource() == btnCalcular){
+            JOptionPane.showMessageDialog(rootPane, "Hola");
+        }
     }
     
 }
