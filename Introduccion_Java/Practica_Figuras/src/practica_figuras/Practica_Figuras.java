@@ -17,7 +17,8 @@ public class Practica_Figuras extends JFrame implements ActionListener {
     JTextField txtBase, txtAltura, txtArea;
     JComboBox cbOpcion;
     JButton btnCalcular;
-    Figuras t;
+    Triangulo t;
+    Cuadrado c;
     
     
     public Practica_Figuras(){
@@ -90,7 +91,8 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         this.setLayout(null);
         this.setVisible(true);
         
-        t = new Figuras();
+        t = new Triangulo();
+        c = new Cuadrado();
     }
 
 
@@ -109,7 +111,11 @@ public class Practica_Figuras extends JFrame implements ActionListener {
                     t.Calcular();
                     txtArea.setText(String.valueOf(t.getCalcular()));
                     break;
-                case "Cuadrado": JOptionPane.showMessageDialog(rootPane, "Cuadrado"); break;
+                case "Cuadrado": 
+                    c.setLado(Double.parseDouble(txtBase.getText()));
+                    c.Calcular();
+                    txtArea.setText(String.valueOf(c.getCalcular()));
+                    break;
                 case "Rectangulo": JOptionPane.showMessageDialog(rootPane, "Rectangulo"); break;
             }
         }
