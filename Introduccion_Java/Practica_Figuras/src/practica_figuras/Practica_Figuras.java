@@ -19,6 +19,7 @@ public class Practica_Figuras extends JFrame implements ActionListener {
     JButton btnCalcular;
     Triangulo t;
     Cuadrado c;
+    Rectangulo r;
     
     
     public Practica_Figuras(){
@@ -93,6 +94,7 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         
         t = new Triangulo();
         c = new Cuadrado();
+        r = new Rectangulo();
     }
 
 
@@ -116,7 +118,12 @@ public class Practica_Figuras extends JFrame implements ActionListener {
                     c.Calcular();
                     txtArea.setText(String.valueOf(c.getCalcular()));
                     break;
-                case "Rectangulo": JOptionPane.showMessageDialog(rootPane, "Rectangulo"); break;
+                case "Rectangulo":
+                    r.setBase(Double.parseDouble(txtBase.getText()));
+                    r.setAltura(Double.parseDouble(txtAltura.getText()));
+                    r.Calcular();
+                    txtArea.setText(String.valueOf(r.getCalcular()));
+                    break;
             }
         }
     }
