@@ -20,6 +20,7 @@ public class Practica_Figuras extends JFrame implements ActionListener {
     Triangulo t;
     Cuadrado c;
     Rectangulo r;
+    Poligono p;
     
     
     public Practica_Figuras(){
@@ -75,6 +76,7 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         cbOpcion.addItem("Triangulo");
         cbOpcion.addItem("Cuadrado");
         cbOpcion.addItem("Rectangulo");
+        cbOpcion.addItem("Poligono");
         cbOpcion.setVisible(true);
         cbOpcion.addActionListener(this);
         this.add(cbOpcion);
@@ -95,6 +97,7 @@ public class Practica_Figuras extends JFrame implements ActionListener {
         t = new Triangulo();
         c = new Cuadrado();
         r = new Rectangulo();
+        p = new Poligono();
     }
 
 
@@ -124,6 +127,11 @@ public class Practica_Figuras extends JFrame implements ActionListener {
                     r.Calcular();
                     txtArea.setText(String.valueOf(r.getCalcular()));
                     break;
+                case "Poligono":
+                    p.setLado(Double.parseDouble(txtBase.getText()));
+                    p.setNumero_Lados(Double.parseDouble(txtAltura.getText()));
+                    p.Calcular();
+                    txtArea.setText(String.valueOf(String.format("%.2f",p.getCalcular())));
             }
         }
     }
