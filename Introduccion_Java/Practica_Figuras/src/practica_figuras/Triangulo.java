@@ -2,7 +2,7 @@
 package practica_figuras;
 
 
-public class Figuras {
+public class Triangulo {
     private Double base;
     private Double altura;
     private Double area;
