@@ -2,12 +2,13 @@
 package org.Programacion;
 
 public class Main extends javax.swing.JFrame {
+    
+    
+    Celsius c;
 
-    /**
-     * Creates new form Main
-     */
     public Main() {
         initComponents();
+        c= new Celsius();
     }
 
     @SuppressWarnings("unchecked")
@@ -142,7 +143,14 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_ConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ConvertirActionPerformed
-        // TODO add your handling code here
+        if(rbtn_Celsius_Kelvin.isSelected()){
+            c.setCelsius(Double.parseDouble(txt_valor.getText()));
+            txt_Resultado.setText(String.valueOf(c.Celsius_Kelvin()));
+        }
+        else if (rbtn_Celsius_Fahrenheit.isSelected()){
+            c.setCelsius(Double.parseDouble(txt_valor.getText()));
+            txt_Resultado.setText(String.valueOf(c.Celsius_Fahrenheit()));
+        }
     }//GEN-LAST:event_btn_ConvertirActionPerformed
 
     /**
