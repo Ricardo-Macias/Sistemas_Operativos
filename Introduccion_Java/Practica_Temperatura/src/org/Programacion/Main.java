@@ -6,11 +6,13 @@ public class Main extends javax.swing.JFrame {
     
     Celsius c;
     Kelvin k;
+    Fahrenheit f;
 
     public Main() {
         initComponents();
         c= new Celsius();
         k = new Kelvin();
+        f = new Fahrenheit();
     }
 
     @SuppressWarnings("unchecked")
@@ -160,6 +162,14 @@ public class Main extends javax.swing.JFrame {
         else if (rbtn_Kelvin_Fahrenheit.isSelected()){
             k.setValor(Double.parseDouble(txt_valor.getText()));
             txt_Resultado.setText(String.valueOf(String.format("%.2f",k.Kelvin_Fahrenheit())));
+        }
+        else if (rbtn_Fahrenheit_Celsius.isSelected()){
+            f.setValor(Double.parseDouble(txt_valor.getText()));
+            txt_Resultado.setText(String.valueOf(String.format("%.2f",f.Fahrenheit_Celsius())));
+        }
+        else if (rbtn_Fahrenheit_Kelvin.isSelected()){
+            f.setValor(Double.parseDouble(txt_valor.getText()));
+            txt_Resultado.setText(String.valueOf(String.format("%.2f", f.Fahrenheit_Kelvin())));
         }
     }//GEN-LAST:event_btn_ConvertirActionPerformed
 
