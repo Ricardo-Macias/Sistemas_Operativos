@@ -79,9 +79,10 @@ if __name__ == "__main__":
     app.geometry("900x540")
     app.title("Planificador FCFS")
 
-    Image_horse = Image.open("Planificador_FCFS/caballo.png")
-    Image_horse = Image_horse.resize((75,75))
-    render_horse = ImageTk.PhotoImage(Image_horse)
+    image_horse = customtkinter.CTkImage(
+        light_image=Image.open("Planificador_FCFS/caballo.png"),
+        size=(75,75)
+    )
 
     list_process = [
         "Caballo A,0,3,0,3",
@@ -91,6 +92,6 @@ if __name__ == "__main__":
         "Caballo E,12,5,15,20"
     ]
 
-    FCFS_planner(app, render_horse, list_process)
+    FCFS_planner(app, image_horse, list_process)
 
     app.mainloop()
