@@ -27,7 +27,7 @@ class FCFS_planner:
         count_time = 0
 
         while len(self.list_process) != 0:
-            lbl_process = customtkinter.CTkLabel(self.frame, image=self.image)
+            lbl_process = customtkinter.CTkLabel(self.frame, image=self.image, text="", fg_color="transparent")
             lbl_process.place(x=date_x, y=date_y)
 
             process = self.list_process[0].split(",")
@@ -42,7 +42,7 @@ class FCFS_planner:
                 date_x += progress
 
                 lbl_process.destroy()
-                lbl_process = customtkinter.CTkLabel(self.frame, image=self.image)
+                lbl_process = customtkinter.CTkLabel(self.frame, image=self.image, text="", fg_color="transparent")
                 lbl_process.place(x=date_x, y=date_y)
 
                 lbl_count_time = customtkinter.CTkLabel(self.frame_time, text=f"Tiempo:            {count_time}", fg_color="lightblue")
