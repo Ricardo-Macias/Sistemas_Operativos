@@ -45,7 +45,7 @@ class FCFS_planner:
                 lbl_process = customtkinter.CTkLabel(self.frame, image=self.image)
                 lbl_process.place(x=date_x, y=date_y)
 
-                lbl_count_time = customtkinter.CTkLabel(self.frame_time, text=f"Tiempo:         {count_time}", fg_color="lightblue")
+                lbl_count_time = customtkinter.CTkLabel(self.frame_time, text=f"Tiempo:            {count_time}", fg_color="lightblue")
                 lbl_count_time.place(x=20, y=70)
 
                 self.window.update()
@@ -54,7 +54,7 @@ class FCFS_planner:
             time.sleep(1)
             self.list_process.pop(0)
 
-            complete_y += 20
+            complete_y += 22
             date_y += 75
             date_x = 0
 
@@ -63,10 +63,10 @@ class FCFS_planner:
         lbl_process = customtkinter.CTkLabel(self.frame_time, text=f"Proceso:           {name_process}", fg_color="lightblue")
         lbl_process.place(x=20, y=10)
 
-        lbl_start_time = customtkinter.CTkLabel(self.frame_time, text=f"Inicio:         {start_process}", fg_color="lightblue")
+        lbl_start_time = customtkinter.CTkLabel(self.frame_time, text=f"Inicio:                {start_process}", fg_color="lightblue")
         lbl_start_time.place(x=20, y=30)
 
-        lbl_end_time = customtkinter.CTkLabel(self.frame_time, text=f"Final:         {end_process}", fg_color="lightblue")
+        lbl_end_time = customtkinter.CTkLabel(self.frame_time, text=f"Final:                 {end_process}", fg_color="lightblue")
         lbl_end_time.place(x=20, y=50)
     
     def end(self, name_process, date_y):
