@@ -1,5 +1,3 @@
-import time
-from CTkMessagebox import CTkMessagebox
 import customtkinter as CTk
 
 class progressBar(CTk.CTk):
