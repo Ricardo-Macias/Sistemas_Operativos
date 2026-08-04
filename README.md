@@ -1,16 +1,14 @@
 # Sistemas Operativos
 
-Este repositorio contiene las actividades realizadas durante la materia de Sistemas Operativos
-
-## Tecnologías
-- Java
-- Python
+Este repositorio contiene las practicas desarrolladas durante la materia de Sistemas Operativos.
 
 ## Introducción a Java
 
-### Practica Figuras
+Esta carpeta reúne las primeras prácticas realizadas para familiarizarse con la sintaxis básica del lenguaje Java.
 
-### Practica Temperatura
+**Practicas**
+- Calcular área
+- Conversor de temperaturas
 
 ## Planificador FCFS
 
