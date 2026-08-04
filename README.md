@@ -16,7 +16,7 @@ Se implementa el algoritmo First Come First Served (FCFS) para comprender el fun
 
 ## Planificador de Multiples Colas
 
-Esta carpeta reúne practicas en donde se busca ejecutar varios procesos al mismo tiempo.
+Esta carpeta reúne practicas en donde se busca ejecutar varios procesos al mismo tiempo, las tecnologías utilizas son **CustomTkinter** y **threading**
 
 ### Objetivos
 - Aprender a utilizar el progressbar
@@ -24,16 +24,15 @@ Esta carpeta reúne practicas en donde se busca ejecutar varios procesos al mism
 
 ### Practica 1
 
-Se implementa una interfaz básica que contiene una barra de progreso.
+Se implementa una interfaz básica con una barra de progreso cuyo objetivo es comprender el funcionamiento del widget y su actualización durante la ejecución
 
 ### Practica 2
 
-Se implementa una interfaz básica que contiene dos label, se utilizar la librería **threading** 
-
+Se implementa una interfaz con dos etiquetas que son actualizadas desde un hilo independiente para comprender el uso de la librería **threading** en aplicaciones con interfaz
 
 ### Practica 3
 
-Se implementa una interfaz con un total de 3 barras de progreso, cada una es maneja por un hilo
+Se implementa una interfaz con tres barras de progreso, cada una controlada por un hilo independiente, simulando la ejecución concurrente de multiples procesos.
 
 ## Planificadores
 
@@ -45,12 +44,12 @@ Estas practicas consisten en la simulación de diferentes algoritmos de planific
 
 ### Practica 1
 
-Se diseño la interfaz grafica y se implemento el algoritmo SJF.
+Se diseño la interfaz grafica, en donde se puede observar información sobre el proceso, al igual un apartado en donde se pueden registrar nuevos procesos y se implemento el algoritmo SJF.
 
 ### Practica 2
 
-Se implementaron los algoritmos FCFS, SJF, Prioridad y Round Robin sin interfaz grafica para validar su funcionamiento.
+Se implementaron los algoritmos FCFS, SJF, Prioridad y Round Robin sin interfaz grafica para validar su funcionamiento y se muestra su funcionamiento desde la consola.
 
 ### Practica 3
 
-Se integraron los algoritmos en una interfaz grafica, edemas de realizar mejoras en la organización del código y en la experiencia de uso.
+Se reutiliza las practicas anteriores, en la interfaz se implementa la elección del planificador que se desea utilizar, en el agregar un nuevo proceso ahora se pregunta si se agregara al final de la lista o al inicio, además se realizaron mejoras a la clase **scheduling_algorithm**
