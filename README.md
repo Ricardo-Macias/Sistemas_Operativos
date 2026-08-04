@@ -16,31 +16,32 @@ Se implementa el algoritmo First Come First Served (FCFS) para comprender el fun
 
 ## Planificador de Multiples Colas
 
+Esta carpeta reúne practicas en donde se busca ejecutar varios procesos al mismo tiempo.
+
+### Objetivos
+- Aprender a utilizar el progressbar
+- Aprender a utilizar hilos
+
 ### Practica 1
 
 Se implementa una interfaz básica que contiene una barra de progreso.
-
-#### Objetivos
-- Aprender a utilizar progressbar.
 
 ### Practica 2
 
 Se implementa una interfaz básica que contiene dos label, se utilizar la librería **threading** 
 
-#### Objetivos
-- Aprender utilizar hilos
 
 ### Practica 3
 
 Se implementa una interfaz con un total de 3 barras de progreso, cada una es maneja por un hilo
 
-#### Objetivos
-- Implementar lo aprendido en la primera practica
-- Implementar lo aprendido en la segunda practica
-
 ## Planificadores
 
-Durante estas practicas se desarrollo progresivamente un simulador de algoritmos de planificación.
+Estas practicas consisten en la simulación de diferentes algoritmos de planificación de procesos utilizados por los sistemas operativos. la aplicación permite visualizar la ejecución de los procesos mediante una interfaz gráfica desarrollada con **CustomTkinter**
+
+### Objetivos
+- Comprender el funcionamiento de los algoritmos de planificación
+- Representar visualmente la ejecución de procesos
 
 ### Practica 1
 
